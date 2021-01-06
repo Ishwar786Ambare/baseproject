@@ -1,0 +1,7 @@
+# Application Settings
+DEBUG=on
+SECRET_KEY=mydevsecretkey
+ALLOWED_HOSTS=*
+
+# Database Settings
+DATABASE_URL=mysql://root:root@127.0.0.1:3306/story-microsite?charset=utf8mb4

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  {% block head %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="story-microsite">
+  <meta property="og:site_name" content="story-microsite" />
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image:type" content="image/png">
+
+
+  {%block extra_meta%}
+  <!--extra meta tags will come here-->
+  {%endblock%}
+
+
+  <title>Title</title>
+
+  <!-- Fonts -->
+  <!-- Favicon -->
+
+  {% endblock %}
+
+
+  {% block custom_head %}
+  {% endblock %}
+
+
+</head>
+
+
+<body class="body">
+
+  {%block header%}
+  {%include 'web/pages/partials/header.html.j2'%}
+  {%endblock%}
+
+  {% block content %}
+  {% endblock %}
+
+  {% block footer %}
+  {%include 'web/pages/partials/footer.html.j2'%}
+  {% endblock %}
+
+
+  <script></script>
+
+
+  {% block extra_footer_script %}
+
+  {% endblock %}
+
+
+</body>
+
+</html>
